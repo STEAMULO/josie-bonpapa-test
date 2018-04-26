@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mapage {
+    height: 100%;
+    width: 1000px;
+    margin: auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.formbtns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 10px;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+
+.formresult {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.listball {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

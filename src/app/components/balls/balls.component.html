@@ -1,0 +1,13 @@
+<div class="balls">
+    <form id="formID" (submit)="ballcheck()">
+        <br>
+        <div class="listball">
+            <div class="ballnb">
+                <div class="eightballs" *ngFor="let nbball of nbballs; let i = index">
+                    {{nbball}} <input type="radio" name="bals" id="ballon" (click)="onSelected(nbball)" required>
+                </div>
+            </div>
+
+        </div>
+    </form>
+</div>
