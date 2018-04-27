@@ -13,6 +13,7 @@ export class BallsComponent implements OnInit {
   nbballs: number[];
   balltab: number[];
   msg: String;
+<<<<<<< HEAD
   ballmsg: {};
 =======
 >>>>>>> f6d5c293fd236d058c2f7a4008371eaa8f92b009
@@ -40,6 +41,7 @@ export class BallsComponent implements OnInit {
         this.balltab.push(this.defaultval);
       }
     });
+<<<<<<< HEAD
     this.ballmsg = this.comparateur(this.balltab);
     alert('la ball ' + this.ballmsg['numeroballon'] + ' est la plus lourd');
     alert('la fonction à tourner ' + this.ballmsg['nbfoisrelancer'] + ' fois, pour trouver le resultat');

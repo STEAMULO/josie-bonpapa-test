@@ -1,4 +1,5 @@
 export function comparateur(input) {
+<<<<<<< HEAD
   let i: number;
   let c: number;
   let output = {};
