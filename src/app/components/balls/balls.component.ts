@@ -14,6 +14,8 @@ export class BallsComponent implements OnInit {
   balltab: number[];
   msg: String;
   ballmsg: {};
+=======
+>>>>>>> f6d5c293fd236d058c2f7a4008371eaa8f92b009
 
 
   constructor() {
@@ -68,6 +70,26 @@ export class BallsComponent implements OnInit {
               'nbfoisrelancer' : (i + 1)
             };
             return output;
+=======
+    this.msg = 'la ball ' + this.comparateur(this.balltab) + ' est la plus lourd';
+
+    alert(this.msg);
+  }
+
+  comparateur(input) {
+    console.log(input);
+    let i: number;
+    let c: number;
+    for (i = 0, c = (this.nbballs.length - 1); i <= c; i++) {
+      if (input[i] !== input[i + 1]) {
+        if ((i + 1) === (this.nbballs.length - 1)) {
+          return this.nbballs[i + 1];
+        } else {
+          if (input[i + 1] !== input[i + 2]) {
+            return this.nbballs[i + 1];
+          } else {
+            return this.nbballs[i];
+>>>>>>> f6d5c293fd236d058c2f7a4008371eaa8f92b009
           }
         }
       }
