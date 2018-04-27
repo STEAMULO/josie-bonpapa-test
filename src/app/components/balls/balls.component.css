@@ -1,0 +1,25 @@
+.balls {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.ballnb {
+    width: 100%;
+    padding: 10px 5px 10px 5px;
+    height: auto;
+}
+
+.eightballs {
+    float: left;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #fff;
+    border: solid 2px silver;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
