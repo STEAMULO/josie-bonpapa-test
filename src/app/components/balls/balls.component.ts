@@ -11,7 +11,10 @@ export class BallsComponent implements OnInit {
   selectedball: number;
   nbballs: number[];
   balltab: number[];
+  msg: String;
   ballmsg: {};
+
+
   constructor() {
     this.nbballs = [1, 2, 3, 4, 5, 6, 7, 8];
     this.defaultval = 2;
@@ -26,17 +29,17 @@ export class BallsComponent implements OnInit {
   }
 
   ballcheck() {
-      this.balltab = [];
-      this.nbballs.forEach(ballnb => {
-        if (ballnb === this.selectedball){
-          this.balltab.push(this.selectedval);
-        } else {
-          this.balltab.push(this.defaultval);
-        }
-      this.ballmsg = this.comparateur(this.balltab);
-      alert('la ball ' + this.ballmsg['numeroballon'] + ' est la plus lourd');
-      alert('la fonction à tourner ' + this.ballmsg['nbfoisrelancer'] + ' fois, pour trouver le resultat');
-    }
+    this.balltab = [];
+    this.nbballs.forEach(ballnb => {
+      if (ballnb === this.selectedball){
+        this.balltab.push(this.selectedval);
+      } else {
+        this.balltab.push(this.defaultval);
+      }
+    });
+    this.ballmsg = this.comparateur(this.balltab);
+    alert('la ball ' + this.ballmsg['numeroballon'] + ' est la plus lourd');
+    alert('la fonction à tourner ' + this.ballmsg['nbfoisrelancer'] + ' fois, pour trouver le resultat');
   }
 
   comparateur(input) {
